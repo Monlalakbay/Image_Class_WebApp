@@ -75,10 +75,10 @@ docker compose up --build
 The API will be accessible at ```http://localhost```.
 
 ### Post
-The User can upload photos( .jpg, .png)  at ```http://localhost/upload```. This photo gets stored and processed overnight.
+The User can upload photos( .jpg, .png)  via  ```http://localhost/upload```. This photo is stored and processed overnight.
 
 ### Prediction
-The User can see the probability the piece of clothing belongs to each category at ```http://localhost```.
+The User can see the probability per class of the piece of clothing that was uploaded a day earlier via ```http://localhost```.
 
 
 ## Author
