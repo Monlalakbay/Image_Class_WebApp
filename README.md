@@ -1,6 +1,7 @@
 # Image classification model for an Online Clothing Shopping Platform
 
 This repository contains an Image classification model that processes images of clothing items and categorizes them into 10 Classes:
+
 0. T-Shirt / Top
 1. Trouser
 2. Pullover
