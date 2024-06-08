@@ -1,0 +1,1 @@
+0 0 * * * /home/appuser/app/bin/compute_prediction.sh >> /home/appuser/app/logs/cron.log 2>&1

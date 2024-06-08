@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  # Flask webapp
+  service_webapp:
+    image: image_webapp:v1.0.0
+    build: 
+      context: .
+      dockerfile: ./app/Dockerfile.app
+    container_name: container_webapp
+    env_file:
+      - .env
+    # ports:
+    #   - 5000:8000
+    volumes:
+      - static_volume:/home/appuser/app/webapp/static
+
+  # NGINX reverse proxy
+  service_nginx:
+    image: nginx:latest
+    build: 
+      context: .
+      dockerfile: ./nginx/Dockerfile.nginx
+    container_name: container_reverse_proxy
+    env_file:
+      - .env
+    ports:
+      - "80:80"
+    volumes:
+      - static_volume:/app/web/staticfiles
+    depends_on:
+      - service_webapp
+
+# Volumes
+volumes:
+  static_volume:

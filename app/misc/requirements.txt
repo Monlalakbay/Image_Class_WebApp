@@ -1,0 +1,8 @@
+python-dotenv
+Flask
+tensorflow
+mlflow
+pandas
+numpy
+Pillow
+gunicorn
