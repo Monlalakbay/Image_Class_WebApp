@@ -7,21 +7,6 @@ import tensorflow as tf
 import mlflow
 from PIL import Image
 
-# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# # Python code to create a file and write to it
-
-# # Specifying the file name
-# file_name = 'ciao.txt'
-# file_path = os.path.join(BASE_DIR, file_name)
-
-# # Opening the file in write mode, which also creates the file if it doesn't exist
-# with open(file_path, 'w') as file:
-#     # Writing a simple message to the file
-#     file.write('Hello, this is the ciao.txt file created using Python.')
-
-# # Printing a confirmation message
-# print(f'File {file_name} has been created and written to.')
-
 def preprocess_image(image_path):
     # Open the image using Pillow
     image = Image.open(image_path)
