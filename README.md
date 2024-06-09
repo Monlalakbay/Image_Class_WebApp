@@ -58,6 +58,16 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+### Install Dependencies
+```shell
+pip install -r requirements.txt
+```
+
+### Set Up Virtual Environment
+```shell
+python3 -m venv venv
+source venv/bin/activate
+```
 
 ### Build Docker Container and run the application
 ```shell
