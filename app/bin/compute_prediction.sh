@@ -1,6 +1,5 @@
-#!/bin/bash
-# Attiva l'ambiente virtuale Python
+# Activate the Python virtual environment
 source /home/appuser/app/venv/bin/activate
 
-# Esegue lo script Python
+# Run the Python script
 python /home/appuser/app/webapp/model_update.py
