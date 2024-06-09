@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Attiva l'ambiente virtuale Python
+# Activate the Python virtual environment
 source /home/${UNAME}/app/venv/bin/activate
 
 # Start Gunicorn by specifying the path to the Flask module
