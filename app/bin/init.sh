@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Attiva l'ambiente virtuale Python
+#  Activate the Python virtual environment
 source /home/${UNAME}/app/venv/bin/activate
 
 # Execute the Python script
