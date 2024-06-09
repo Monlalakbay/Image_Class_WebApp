@@ -37,32 +37,6 @@ model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(),
               metrics=['accuracy'])
 
-# =============================================================================
-# ## Start MLflow run
-# # New runs are launched under this experiment
-# with mlflow.start_run() as run:
-#     # Log parameters
-#     mlflow.log_param("epochs", 10)
-# 
-# ## Train the model
-# model.fit(train_images, train_labels, epochs=10)
-# 
-# ## Evaluate Accuracy
-# test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
-# mlflow.log_metric("test_loss", test_loss)
-# mlflow.log_metric("test_accuracy", test_acc)
-# 
-# # Log model
-# mlflow.tensorflow.log_model(model, "fashion_mnist_model")
-# 
-# # Print test accuracy
-# print('\nTest accuracy:', test_acc)
-# 
-# # Save the model
-# mlflow.tensorflow.save_model("imageclass_fashion_mnist_model", BASE_DIR)
-# =============================================================================
-
-
 ## Start MLflow run
 # New runs are launched under this experiment
 with mlflow.start_run() as run:
